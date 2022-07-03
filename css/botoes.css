@@ -1,0 +1,21 @@
+.botao_pequeno {
+    padding: 15px 25px;
+    font-size: medium;
+    background-color: #ffc8dd;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.botao_dia {
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    border: none;
+    background-color: #fcbf49;
+    cursor: pointer;
+    position: absolute;
+    right: 50px;
+    bottom: 10px;
+}
+

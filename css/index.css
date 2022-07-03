@@ -1,0 +1,44 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: blueviolet;
+
+}
+
+#background {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+#background img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#content {
+    position: absolute;
+    bottom: 0px;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+
+}
+
+#dialogo {
+    max-width: 1200px;
+}
+
+.com_fundo {
+    background-color:  #ffc8dd;
+
+}
