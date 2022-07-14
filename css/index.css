@@ -36,9 +36,20 @@ body {
 
 #dialogo {
     max-width: 1200px;
+    font-size:large;
 }
 
 .com_fundo {
     background-color:  #ffc8dd;
 
+}
+
+#escolha {
+    justify-content: space-between;
+}
+
+#final {
+    font-size: large;
+    align-items: center;
+    flex-direction: column;
 }

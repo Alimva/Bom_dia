@@ -14,14 +14,14 @@ const dialogos= ["Desligo o meu alarme e me arrasto da minha cama.",
 " "]
 
 function passar_dia() {
-    if(cont == 10){
+    if(cont == 5){
         let bg = document.querySelector("#background img")
-        bg.src = "../assets/img/sala.jpeg"
+        bg.src = "../../assets/img/rua_tarde.jpeg"
     }
     let container = document.querySelector ("#dialogo p")
     container.innerText = dialogos [cont]
     cont++;
-    //console.log (dialogos [cont])
+
     mostrar_escolha()
 }
 
@@ -40,13 +40,12 @@ function mostrar_escolha(){
 }
 
 function escolha_1(){
-    set_checkpoint("R1/vam.html")
-    window.location = "R1/vam.html"
+    set_checkpoint("R5/cap.html")
+    window.location = "R5/cap.html"
 }
 
 function escolha_2(){
-    set_checkpoint("R1/vop.html")
-    window.location = "R1/vop.html"
+    set_checkpoint("R5/is.html")
+    window.location = "R5/is.html"
 
 }
-
