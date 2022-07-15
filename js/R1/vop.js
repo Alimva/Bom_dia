@@ -38,7 +38,7 @@ const dialogos= ["Na verdade, oficina é uma palavra meio forte",
 "Não se preocupa, viu? A gente aceita ela. Melhor ainda: devolvemos tudo que você pagou até agora!",
 "Meu corpo congela quando eu finalmente reconheço a voz",
 "Se prepare garota, você acabou de adquirida por nós!",
-"A Boy Band One Direction"]
+"A Boy Band One Direction!"]
 
 function passar_dia() {
     if(cont == dialogos.length){
