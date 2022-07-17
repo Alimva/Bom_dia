@@ -56,8 +56,8 @@ function escolha_1(){
 }
 
 function escolha_2(){
-    set_checkpoint("/R1/vop.html")
-    window.location = "/R1/vop.html"
+    set_checkpoint("main/R1/vop.html")
+    window.location = "main/R1/vop.html"
 
 }
 
