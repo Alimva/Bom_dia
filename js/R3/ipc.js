@@ -40,12 +40,12 @@ function mostrar_escolha(){
 }
 
 function escolha_1(){
-    set_checkpoint("R5/cap.html")
-    window.location = "R5/cap.html"
+    set_checkpoint("main/R5/cap.html")
+    window.location = "main/R5/cap.html"
 }
 
 function escolha_2(){
-    set_checkpoint("R5/is.html")
-    window.location = "R5/is.html"
+    set_checkpoint("main/R5/is.html")
+    window.location = "main/R5/is.html"
 
 }

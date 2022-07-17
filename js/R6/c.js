@@ -40,12 +40,12 @@ function mostrar_escolha(){
 }
 
 function escolha_1(){
-    set_checkpoint("R7/pce.html")
-    window.location = "R7/pce.html"
+    set_checkpoint("main/R7/pce.html")
+    window.location = "main/R7/pce.html"
 }
 
 function escolha_2(){
-    set_checkpoint("R7/nv.html")
-    window.location = "R7/nv.html"
+    set_checkpoint("main/R7/nv.html")
+    window.location = "main/R7/nv.html"
 
 }
