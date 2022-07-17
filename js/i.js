@@ -27,7 +27,7 @@ const dialogos= ["Desligo o meu alarme e me arrasto da cama.",
 function passar_dia() {
     if(cont == 6){
         let bg = document.querySelector("#background img")
-        bg.src = "../assets/img/sala.jpeg"
+        bg.src = "../assets/img/sala.jpg"
     }
     let container = document.querySelector ("#dialogo p")
     container.innerText = dialogos [cont]
