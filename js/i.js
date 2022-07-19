@@ -41,7 +41,7 @@ const e  = document.getElementById("escolha")
 function mostrar_escolha(){
     console.log("chamo")
     if(cont == dialogos.length){
-        console.log("tem q mudar")
+        console.log("tem que mudar")
         e.setAttribute("style", "display: blcok;")
         return
     } else if (e.style = "display: block;"){
@@ -59,5 +59,11 @@ function escolha_2(){
     set_checkpoint("R1/vop.html")
     window.location = "R1/vop.html"
 
+}
+
+function muda_nome(){
+    if(cont == 10){
+        nome.innerText = "S/N"  
+    }
 }
 
