@@ -16,11 +16,11 @@ const dialogos= ["Desligo o meu alarme e me arrasto da minha cama.",
 function passar_dia() {
     if(cont == 5){
         let bg = document.querySelector("#background img")
-        bg.src = "../../assets/img/rua_manhã.jpeg"
+        bg.src = "../assets/img/rua_manhã.jpeg"
     }
     if(cont == 8){
         let bg = document.querySelector("#background img")
-        bg.src = "../../assets/img/corredor.jpg"
+        bg.src = "../assets/img/corredor.jpg"
     }
     if(cont == 10){
         let bg = document.querySelector("#background img")
@@ -48,12 +48,12 @@ function mostrar_escolha(){
 }
 
 function escolha_1(){
-    set_checkpoint("main/R3/ipaf.html")
-    window.location = "main/R3/ipaf.html"
+    set_checkpoint("R3/ipaf.html")
+    window.location = "R3/ipaf.html"
 }
 
 function escolha_2(){
-    set_checkpoint("main/R3/ipc.html")
-    window.location = "main/R3/ipc.html"
+    set_checkpoint("R3/ipc.html")
+    window.location = "R3/ipc.html"
 
 }
