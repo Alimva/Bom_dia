@@ -51,13 +51,13 @@ function mostrar_escolha(){
 }
 
 function escolha_1(){
-    set_checkpoint("main/R1/vam.html")
-    window.location = "main/R1/vam.html"
+    set_checkpoint("R1/vam.html")
+    window.location = "R1/vam.html"
 }
 
 function escolha_2(){
-    set_checkpoint("main/R1/vop.html")
-    window.location = "main/R1/vop.html"
+    set_checkpoint("/R1/vop.html")
+    window.location = "/R1/vop.html"
 
 }
 
