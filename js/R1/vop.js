@@ -42,8 +42,8 @@ const dialogos= ["Na verdade, oficina é uma palavra meio forte",
 
 function passar_dia() {
     if(cont == dialogos.length){
-        set_checkpoint ("main/R1/final_1.html")
-        window.location = "main/R1/final_1.html"
+        set_checkpoint ("R1/final_1.html")
+        window.location = "R1/final_1.html"
     }
 
     let container = document.querySelector ("#dialogo p")
