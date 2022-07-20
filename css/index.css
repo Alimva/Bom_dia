@@ -39,8 +39,8 @@ body {
 #historia {
     position: absolute;
     bottom: 0px;
-    padding-bottom: 100px;
-    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-top: 100px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -53,6 +53,11 @@ body {
 #dialogo {
     max-width: 1200px;
     font-size:large;
+    padding-top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    position:absolute;
 }
 
 .com_fundo {
@@ -67,7 +72,11 @@ body {
 #final {
     font-size: large;
     align-items: center;
-    flex-direction: column;
+    width: 100vw;
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 40px;
 }
 
 #personagem {
