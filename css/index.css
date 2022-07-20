@@ -20,6 +20,23 @@ body {
 }
 
 #content {
+   
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    align-items: flex-start;
+    position:absolute;
+    max-height: 100px;
+    bottom: 0px;
+    padding-bottom: 60px;
+    padding-top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+
+}
+
+#historia {
     position: absolute;
     bottom: 0px;
     padding-bottom: 100px;
@@ -31,7 +48,6 @@ body {
     align-items: center;
     justify-content: center;
     width: 100vw;
-
 }
 
 #dialogo {
@@ -45,7 +61,7 @@ body {
 }
 
 #escolha {
-    justify-content: space-between;
+    gap: 100px;
 }
 
 #final {
@@ -54,7 +70,8 @@ body {
     flex-direction: column;
 }
 
-#nome {
-    padding-bottom: 90px;
-    align-items: flex-start;
+#personagem {
+    padding-left: 50px;
+    padding-bottom: 100px;
+    font-size: x-large;
 }

@@ -1,6 +1,6 @@
 let cont = 0 
 
-const dialogos= ["Desligo o meu alarme e me arrasto da cama.",
+const dialogos = ["Desligo o meu alarme e me arrasto da cama.",
 "Eu me arrumo na frente do espelho e coloco meu cabelo em um coque bagunçado",
 "Eu arrumo a mochila e olho para o relogio em cima da mesa",
 "Toda pronta em 15 minutos! Só falta o café da manhã e vou estar pronta para sair.",
@@ -24,6 +24,8 @@ const dialogos= ["Desligo o meu alarme e me arrasto da cama.",
 "Mas... A escola é bem longe. Se eu não sair logo vou acabar me atrasando",
 " "]
 
+const names = ["Mãe","S/N"]
+
 function passar_dia() {
     if(cont == 6){
         let bg = document.querySelector("#background img")
@@ -32,20 +34,17 @@ function passar_dia() {
     let container = document.querySelector ("#dialogo p")
     container.innerText = dialogos [cont]
     cont++;
-    //console.log (dialogos [cont])
+    console.log (cont)
     mostrar_escolha()
 }
 
 const e  = document.getElementById("escolha")
 
 function mostrar_escolha(){
-    console.log("chamo")
     if(cont == dialogos.length){
-        console.log("tem que mudar")
         e.setAttribute("style", "display: blcok;")
         return
     } else if (e.style = "display: block;"){
-        console.log("n muda nada")
         e.setAttribute("style", "display: none;")
     }
 }
@@ -62,8 +61,11 @@ function escolha_2(){
 }
 
 function muda_nome(){
+    
     if(cont == 10){
-        nome.innerText = "S/N"  
+        let container = document.querySelector ("#nome p")
+        container.innerText = names [0] 
     }
+
 }
 

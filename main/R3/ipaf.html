@@ -14,16 +14,27 @@
 <body>
     <div id="background"> <img src="../../assets/img/sala.jpeg" alt=""></div>
     <div id="content" class="com_fundo">
-        <div id="dialogo" >
-            <p>Oi mae!</p>
-        </div>
-        <div id="container">
-            <button class="botao_dia" onclick="passar_dia()" >>></button>
-            <div id="escolha" style="display: none;">
-                <button class="es_1" onclick="escolha_1()">Dançar com as garotas</button>
-                <button class="es_2" onclick="escolha_2()">Falar com o Bad Boy</button>
+        
+        <div id="personagem" onclick="muda_nome()">
+            <div id="nome">
+                <p>S/N</p>
             </div>
         </div>
+        
+        <div id="história">
+        
+            <div id="dialogo" >
+                <p>Oi mae!</p>
+            </div>
+            <div id="container">
+                <button class="botao_dia" onclick="passar_dia()" >>></button>
+                <div id="escolha" style="display: none;">
+                    <button class="es_1" onclick="escolha_1()">Dançar com as garotas</button>
+                    <button class="es_2" onclick="escolha_2()">Falar com o Bad Boy</button>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
     <script src="../../js/R3/ipaf.js"></script>
     <script src="../../js/checkpoint.js"></script>
