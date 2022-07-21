@@ -27,12 +27,13 @@ const dialogos= ["Eu viro para a minha mãe enquanto coloco o meu tenis all-star
 "O lado ruim é que as informações acabam aí",
 "Merda.",
 "A Elisa já me disse que o conselho estudantil é por aqui. Deve ser fácil de achar, né?",
-"Se bem que eu sempre posso tentar me virar sozinha. Atrasada por atrasada eu já estou e, no fim,o que é um pum, né?" ]
+"Se bem que eu sempre posso tentar me virar sozinha. Atrasada por atrasada eu já estou e, no fim,o que é um pum, né?",
+" " ]
 
 function passar_dia() {
     if(cont == 8){
         let bg = document.querySelector("#background img")
-        bg.src = "../assets/img/corredor.jpg"
+        bg.src = "../../assets/img/corredor.jpg"
     }
     let container = document.querySelector ("#dialogo p")
     container.innerText = dialogos [cont]
@@ -57,11 +58,11 @@ function mostrar_escolha(){
 
 function escolha_1(){
     set_checkpoint("main/R2/sv.html")
-    window.location = "main/R2/sv.html"
+    window.location = "R2/sv.html"
 }
 
 function escolha_2(){
-    set_checkpoint("main/R2/incs.html")
-    window.location = "main/R2/incs.html"
+    set_checkpoint("R2/incs.html")
+    window.location = "R2/incs.html"
 
 }
