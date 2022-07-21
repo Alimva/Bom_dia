@@ -4,8 +4,8 @@ const dialogos= ["e ai","tudo bem"]
 
 function passar_dia() {
     if(cont == dialogos.length){
-        set_checkpoint ("main/R8/final_7.html")
-        window.location = "main/R8/final_7.html"
+        set_checkpoint ("final_7.html")
+        window.location = "final_7.html"
     }
 
     let container = document.querySelector ("#dialogo p")

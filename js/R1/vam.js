@@ -57,12 +57,12 @@ function mostrar_escolha(){
 }
 
 function escolha_1(){
-    set_checkpoint("main/R2/sv.html")
-    window.location = "R2/sv.html"
+    set_checkpoint("../R2/sv.html")
+    window.location = "../R2/sv.html"
 }
 
 function escolha_2(){
-    set_checkpoint("R2/incs.html")
-    window.location = "R2/incs.html"
+    set_checkpoint("../R2/incs.html")
+    window.location = "../R2/incs.html"
 
 }

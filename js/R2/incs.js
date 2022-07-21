@@ -74,12 +74,12 @@ function mostrar_escolha(){
 }
 
 function escolha_1(){
-    set_checkpoint("R3/ipaf.html")
-    window.location = "R3/ipaf.html"
+    set_checkpoint("../R3/ipaf.html")
+    window.location = "../R3/ipaf.html"
 }
 
 function escolha_2(){
-    set_checkpoint("R3/ipc.html")
-    window.location = "R3/ipc.html"
+    set_checkpoint("../R3/ipc.html")
+    window.location = "../R3/ipc.html"
 
 }
