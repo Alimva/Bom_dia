@@ -31,7 +31,11 @@ const dialogos= ["Eu viro para a minha mãe enquanto coloco o meu tenis all-star
 " " ]
 
 function passar_dia() {
-    if(cont == 8){
+    if(cont == 3){
+        let bg = document.querySelector("#background img")
+        bg.src = "../../assets/img/rua_dia.jpg"
+    }
+    if(cont == 18){
         let bg = document.querySelector("#background img")
         bg.src = "../../assets/img/corredor.jpg"
     }

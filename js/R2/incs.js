@@ -37,18 +37,11 @@ const dialogos= ["Felizmente, o caminho e bem sinalizado",
 "As três garotas mais ricas, bonitas e populares da escola",
 "Eu olho para o poster pensativa. Podia ser divertido.",
 "Nunca fui em uma festa do Ensino Médio que nem as de filme e essa é a oportunidade perfeita",
-"Por outro lado, eui nunca fui fã de festas. Vai ser um saco ir lá só pra ficar num canto entediada e desconfortável"]
+"Por outro lado, eu nunca fui fã de festas. Vai ser um saco ir lá só pra ficar num canto entediada e desconfortável",
+" "]
 
 function passar_dia() {
-    if(cont == 5){
-        let bg = document.querySelector("#background img")
-        bg.src = "../assets/img/rua_manhã.jpeg"
-    }
-    if(cont == 8){
-        let bg = document.querySelector("#background img")
-        bg.src = "../assets/img/corredor.jpg"
-    }
-    if(cont == 10){
+    if(cont == 11){
         let bg = document.querySelector("#background img")
         bg.src = "../../assets/sala_escola.png"
     }
@@ -62,13 +55,10 @@ function passar_dia() {
 const e  = document.getElementById("escolha")
 
 function mostrar_escolha(){
-    console.log("chamo")
     if(cont == 12){
-        console.log("tem q mudar")
         e.setAttribute("style", "display: blcok;")
         return
     } else if (e.style = "display: block;"){
-        console.log("n muda nada")
         e.setAttribute("style", "display: none;")
     }
 }
