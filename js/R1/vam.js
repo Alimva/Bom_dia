@@ -49,13 +49,13 @@ function passar_dia() {
 const e  = document.getElementById("escolha")
 
 function mostrar_escolha(){
-    console.log("chamo")
+    
     if(cont == dialogos.length){
-        console.log("tem q mudar")
+        
         e.setAttribute("style", "display: blcok;")
         return
     } else if (e.style = "display: block;"){
-        console.log("n muda nada")
+        
         e.setAttribute("style", "display: none;")
     }
 }
