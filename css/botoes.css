@@ -1,11 +1,15 @@
 .botao_pequeno {
+    position: absolute;
     padding: 15px 25px;
     font-size: medium;
     background-color: #ffc8dd;
     border-radius: 10px;
     border: none;
     cursor: pointer;
-    margin-left: 650px;
+    left: 52%;
+    transform: translateX(-50%);
+    margin-top: 45%;
+
 }
 
 .botao_dia {

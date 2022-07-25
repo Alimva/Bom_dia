@@ -24,9 +24,9 @@ body {
     display: flex;
     flex-direction: row;
     align-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     position:absolute;
-    max-height: 100px;
+    max-height: 250px;
     bottom: 0px;
     padding-bottom: 60px;
     padding-top: 20px;
@@ -59,12 +59,19 @@ body {
     position:absolute;
 }
 
+p {
+   text-decoration: none; 
+}
+
 .com_fundo {
     background-color:  #ffc8dd;
 
 }
 
 #escolha {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
     gap: 100px;
 }
 

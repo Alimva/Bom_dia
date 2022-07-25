@@ -43,7 +43,7 @@ const dialogos= ["Felizmente, o caminho e bem sinalizado",
 function passar_dia() {
     if(cont == 11){
         let bg = document.querySelector("#background img")
-        bg.src = "../../assets/sala_escola.png"
+        bg.src = "../../assets/img/sala_escola.png"
     }
     let container = document.querySelector ("#dialogo p")
     container.innerText = dialogos [cont]
@@ -55,7 +55,7 @@ function passar_dia() {
 const e  = document.getElementById("escolha")
 
 function mostrar_escolha(){
-    if(cont == 12){
+    if(cont == dialogos.length){
         e.setAttribute("style", "display: blcok;")
         return
     } else if (e.style = "display: block;"){
