@@ -57,6 +57,7 @@ body {
     display: flex;
     position:absolute;
     padding-bottom: 50px;
+    text-align: center;
 }
 
 p {
@@ -73,11 +74,13 @@ p {
     transform: translateX(-50%);
     position: absolute;
     gap: 100px;
+    bottom: 60px;
 }
 
 #final {
     font-size: large;
-    align-items: center;
+    text-align: center;
+    padding-bottom: 40px;
     width: 100vw;
     position:absolute;
     left: 50%;

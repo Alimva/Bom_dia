@@ -45,6 +45,9 @@ function passar_dia() {
         let bg = document.querySelector("#background img")
         bg.src = "../../assets/img/sala_escola.png"
     }
+    if(cont == dialogos.length){
+        element.setAttribute("hidden","hidden")
+    }
     let container = document.querySelector ("#dialogo p")
     container.innerText = dialogos [cont]
     cont++;

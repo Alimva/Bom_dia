@@ -39,6 +39,9 @@ function passar_dia() {
         let bg = document.querySelector("#background img")
         bg.src = "../../assets/img/corredor.jpg"
     }
+    if(cont == dialogos.length){
+        element.setAttribute("hidden","hidden")
+    }
     let container = document.querySelector ("#dialogo p")
     container.innerText = dialogos [cont]
     cont++;

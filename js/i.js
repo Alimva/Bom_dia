@@ -31,6 +31,9 @@ function passar_dia() {
         let bg = document.querySelector("#background img")
         bg.src = "../assets/img/sala.jpg"
     }
+    if(cont == dialogos.length){
+        element.setAttribute("hidden", "hidden");
+    }
     let container = document.querySelector ("#dialogo p")
     container.innerText = dialogos [cont]
     cont++;
@@ -42,7 +45,7 @@ const e  = document.getElementById("escolha")
 
 function mostrar_escolha(){
     if(cont == dialogos.length){
-        e.setAttribute("style", "display: blcok;")
+        e.setAttribute("style", "display: block;")
         return
     } else if (e.style = "display: block;"){
         e.setAttribute("style", "display: none;")
