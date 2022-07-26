@@ -54,7 +54,7 @@ const dialogos= ["Além disso, só tem mais 3 dias de aula. Não vou tá perdend
 function passar_dia() {
     if(cont == 25){
         let bg = document.querySelector("#background img")
-        bg.src = "../../assets/img/sala_escola.jpeg"
+        bg.src = "../../assets/img/sala_escola.png"
     }
     if(cont == 41){
         let bg = document.querySelector("#background img")
