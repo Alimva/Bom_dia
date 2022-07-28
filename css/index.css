@@ -26,7 +26,8 @@ body {
     align-content: flex-start;
     align-items: center;
     position:absolute;
-    max-height: 250px;
+    max-height: 150px;
+    min-height: 130px;
     bottom: 0px;
     padding-bottom: 60px;
     padding-top: 20px;
@@ -92,4 +93,21 @@ p {
     padding-left: 50px;
     padding-bottom: 90px;
     font-size: x-large;
+}
+
+#personagem_img img {
+    height: 500px;
+
+}
+
+#personagem_img {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: center;
+    height: calc(100vh - 190px);
+}
+
+#personagem_img.escondido {
+    display:none;
 }

@@ -10,7 +10,7 @@ const dialogos = ["Desligo o meu alarme e me arrasto da cama.",
 "Bom dia, mãe!",
 "Ela levanta a cabeça e sorri ao me ver",
 "Bom dia, filha! Animada para o seu primeiro dia de aula na escola nova?",
-"Animada pra que? Eu vou ter só dois dias de aula antes do ano acabar",
+"Animada pra que? Eu vou ter só três dias de aula antes do ano acabar",
 "Para com isso filha. Você está indo para a escola Amoris! É a primeira da família a pisar nessa escola",
 "Mentira. A tia Jessica tava lá antes de eu nascer",
 "É diferente e você sabe. Ela trabalhava lá como faxineira, mas você vai para estudar",
@@ -24,7 +24,7 @@ const dialogos = ["Desligo o meu alarme e me arrasto da cama.",
 "Mas... A escola é bem longe. Se eu não sair logo vou acabar me atrasando",
 " "]
 
-const names = ["Mãe","S/N"]
+const names = ["Mãe","S/N"," "]
 
 function passar_dia() {
     if(cont == 6){
@@ -34,10 +34,13 @@ function passar_dia() {
     if(cont == dialogos.length){
         element.setAttribute("hidden", "hidden");
     }
+    
+    muda_nome ()
+    muda_personagem()
     let container = document.querySelector ("#dialogo p")
     container.innerText = dialogos [cont]
-    cont++;
     console.log (cont)
+    cont++;
     mostrar_escolha()
 }
 
@@ -65,10 +68,31 @@ function escolha_2(){
 
 function muda_nome(){
     
-    if(cont == 10){
-        let container = document.querySelector ("#nome p")
+    let container = document.querySelector ("#nome p")
+
+    if(cont == 9 || cont == 11 || cont == 13 || cont == 16){
         container.innerText = names [0] 
     }
-
+    if(cont == 7 || cont == 10 || cont == 12 || cont ==15){
+        container.innerText = names [1] 
+    }
+    if(cont == 8 || cont == 17){
+        container.innerText = names [2] 
+    }
+    
 }
 
+function muda_personagem() {
+    let personagem_img = document.querySelector ("#personagem_img")
+    let img = document.querySelector ("#personagem_img img")
+    
+    if(cont == 9){
+        personagem_img.classList.remove("escondido")
+    }
+    if(cont == 12){
+        img.src = "../assets/pers/Bad_Boy.png"
+    }
+    if(cont == 15){
+        personagem_img.classList.add("escondido")
+    }
+}

@@ -13,11 +13,16 @@
 
 <body>
     <div id="background"> <img src="../../assets/img/sala.jpg" alt=""></div>
+    
+    <div id="personagem_img" class="escondido">
+        <img src="../assets/pers/pai_SN.png" alt="">
+    </div>
+    
     <div id="content" class="com_fundo">
         
-        <div id="personagem" onclick="muda_nome()">
+        <div id="personagem">
             <div id="nome">
-                <p>S/N</p>
+                <p> </p>
             </div>
         </div>
         
@@ -29,6 +34,7 @@
         
             
             <button class="botao_dia" onclick="passar_dia()" >>></button>
+            
             <div id="escolha" style="display: none;">
                 <button class="es_1" onclick="escolha_1()">Se virar</button>
                 <button class="es_2" onclick="escolha_2()">Ir no conselho estudantil</button>

@@ -30,6 +30,8 @@ const dialogos= ["Eu viro para a minha mãe enquanto coloco o meu tenis all-star
 "Se bem que eu sempre posso tentar me virar sozinha. Atrasada por atrasada eu já estou e, no fim,o que é um pum, né?",
 " " ]
 
+let names = ["S/N",""]
+
 function passar_dia() {
     if(cont == 3){
         let bg = document.querySelector("#background img")
@@ -42,10 +44,11 @@ function passar_dia() {
     if(cont == dialogos.length){
         element.setAttribute("hidden","hidden")
     }
+    muda_nome()
     let container = document.querySelector ("#dialogo p")
     container.innerText = dialogos [cont]
-    cont++;
-
+    console.log(cont)
+    cont++
     mostrar_escolha()
 }
 
@@ -72,4 +75,14 @@ function escolha_2(){
     set_checkpoint("../R2/incs.html")
     window.location = "../R2/incs.html"
 
+}
+
+function muda_nome(){
+    let container = document.querySelector ("#nome p")
+
+    if(cont == 1){
+        container.innerText = names [0] 
+    } else {
+        container.innerText = names [1]
+    }
 }

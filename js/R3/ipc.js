@@ -1,6 +1,16 @@
 let cont = 0 
 
-const dialogos= [
+const dialogos= ["Eu me vira para a Lisa",
+"Olha se você tiver vontade de ir eu até considero ir contigo mas se não...",
+"Não se preocupe. Você sabe que eu tenho mais coisas para fazer",
+"Imagino",
+"O plano deve ser estudar como sempre",
+"Sabe S/N. Eu poderia ir contigo até a sua casa.",
+"Sério? Mas Lisa o caminho não é meio fora de mão para você?",
+"Só um pouquinho",
+"Mentira. Ela mora no outro lado da cidade e precisaria de dois ônibus paa chegar em casa.",
+"Seria melhor não fazer ela se deviar tanto do caminho dela",
+"Claro que no pior dos casos ela sempe pode dormir na minha casa. Não é como se meus pais brigariam",
 " "]
 
 function passar_dia() {

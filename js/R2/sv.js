@@ -1,6 +1,6 @@
 let cont = 0 
 
-const dialogos= ["Além disso, só tem mais 3 dias de aula. Não vou tá perdendo nada importante se eu me atrasar.",
+const dialogos= ["Além disso, só tem mais 3 dias de aula. Não vou estar perdendo nada importante se eu me atrasar.",
 "Eu olho para o corredor e começo a caminhar. Eu olho pela janelinha na porta das salas procurando algum sinal de que essa é a sala do terceiro ano",
 "Eu fico nessa por pelo menos uma hora sem encontrar a maldita sala",
 "Se arrependiment matasse ... Eu devia ter procurado a Elisa",
@@ -51,6 +51,8 @@ const dialogos= ["Além disso, só tem mais 3 dias de aula. Não vou tá perdend
 "Por outro lado, eu nunca fui fã de festas. Vai ser um saco ir lá só pra ficar num canto entediada e desconfortável",
 " "]
 
+const names =["???","S/N","Elisa"," "]
+
 function passar_dia() {
     if(cont == 25){
         let bg = document.querySelector("#background img")
@@ -63,8 +65,11 @@ function passar_dia() {
     if(cont == dialogos.length){
         element.setAttribute("hidden","hidden")
     }
+    muda_nome()
+    muda_personagem()
     let container = document.querySelector ("#dialogo p")
     container.innerText = dialogos [cont]
+    console.log(cont)
     cont++;
 
     mostrar_escolha()
@@ -93,4 +98,39 @@ function escolha_2(){
     set_checkpoint("../R3/ipc.html")
     window.location = "../R3/ipc.html"
 
+}
+
+function muda_nome(){
+    let container = document.querySelector("#nome p")
+
+    if(cont == 7 || cont == 9 || cont == 15 || cont == 17 || cont == 19){
+        container.innerText = names [0]
+    }
+    if(cont == 6 || cont == 8 || cont == 14 || cont == 16 ||cont == 18 || cont == 20 || cont == 33 || cont == 35 || cont == 37 || cont == 39 || cont == 42 || cont == 44){
+        container.innerText = names[1]
+    }
+    if(cont == 32 || cont == 34 || cont == 36 || cont == 38 || cont == 40 || cont == 43 || cont == 45){
+        container.innerText = names [2]
+    }
+    if(cont == 10 || cont == 21 || cont == 41 || cont == 46){
+        container.innerText = names [3]
+    }
+}
+
+function muda_personagem(){
+    let personagem_img = document.querySelector("#personagem_img")
+    let img = document.querySelector("#personagem_img img")
+    
+    
+    if(cont == 32 || cont == 34 || cont == 36 || cont == 38 || cont == 40 || cont == 43 || cont == 45){
+        personagem_img.classList.remove("escondido")
+        img.src = "../../assets/pers/presidenta.png"
+    }
+    if(cont == 7 || cont == 9 || cont == 15 || cont == 17 || cont == 19){
+        personagem_img.classList.remove("escondido")
+        img.src = "../../assets/pers/Bad_Boy.png"
+    }
+    else {
+        personagem_img.classList.add("escondido")
+    }
 }
