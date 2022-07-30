@@ -48,9 +48,9 @@ const e  = document.getElementById("escolha")
 
 function mostrar_escolha(){
     if(cont == dialogos.length){
-        e.setAttribute("style", "display: block;")
+        e.setAttribute("style", "display: flex;")
         return
-    } else if (e.style = "display: block;"){
+    } else if (e.style = "display: flex;"){
         e.setAttribute("style", "display: none;")
     }
 }

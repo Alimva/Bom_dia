@@ -111,3 +111,14 @@ p {
 #personagem_img.escondido {
     display:none;
 }
+
+@media (max-width:400px) {
+    #personagem{
+        padding-left: 20px;
+    }
+    #escolha{
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+}

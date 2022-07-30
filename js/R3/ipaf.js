@@ -29,9 +29,11 @@ const dialogos= ["Eu viro para Elisa com um sorriso",
 "Infelizmente a luz apaga pouco depois. Eu olho ao meu redor mas não vejo ninguém perto ds interruptores do outro lado da sala",
 "Mas que droga! Até mesmo a briga eminente entre o trio na frente da caixa de som está ficando entediante. Não posso nem ler em paz nessa festa?",
 "Eu como me preparo para tentar ligar a luz de novo, mas do canto do meu olho eu vejo uma figura familiar. Eu jovem ruivo sentado em um canto parecendo mais entediado que eu",
-"Bom falar com o chato do Henri vai ser mais divertido que ficar aqui plantada. Pelo menos nos 10 minutos entre o fim do Rap de anime tocando e a música do BTS pronta para tocar.",
+"Bom falar com o chato do Henri vai ser mais divertido que ficar aqui plantada. Pelo menos nos 20 minutos entre o fim do Rap de anime tocando e a música do BTS esperando a sua hora de brilhar.",
 "Se bem que qualqer coisa é melhor do que falar com aquele asno.",
 " "]
+
+const names = ["Elisa","S/N", " "]
 
 function passar_dia() {
     if(cont == 6){
@@ -45,10 +47,13 @@ function passar_dia() {
     if(cont == dialogos.length){
         element.setAttribute("hidden","hidden")
     }
+    muda_nome()
+    muda_personagem ()
+    console.log(cont)
     let container = document.querySelector ("#dialogo p")
     container.innerText = dialogos [cont]
     cont++;
-
+    
     mostrar_escolha()
 }
 
@@ -75,4 +80,25 @@ function escolha_2(){
     set_checkpoint("../R4/fcobb.html")
     window.location = "../R4/fcobb.html"
 
+}
+
+function muda_nome(){
+    let container = document.querySelector("#nome p")
+
+    if(cont == 2 || cont == 4 ){
+        container.innerText = names[0]
+    }
+    if(cont == 1 || cont == 3){
+        container.innerText = names[1]
+    }
+    if(cont == 5){
+        container.innerText = names[2]
+    }
+}
+
+function muda_personagem () {
+    let personagem_img = document.querySelector("#personagem_img")
+    let img = document.querySelector("#personagem_img img")
+
+    
 }

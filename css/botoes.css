@@ -8,8 +8,7 @@
     cursor: pointer;
     left: 52%;
     transform: translateX(-50%);
-    margin-top: 45%;
-
+    bottom: 30%;
 }
 
 .botao_dia {
@@ -22,9 +21,10 @@
     position: absolute;
     right: 50px;
     bottom: 20px;
+
 }
 
-.es_1{
+.es_1, .es_2{
     background-color: #FFEFC2;
     right: 50px;
     padding: 15px 25px;
@@ -32,17 +32,12 @@
     cursor: pointer;
     border-radius: 10px;
     margin: 10px;
+    width: 100%;
+    min-width: max-content;
     
 }
 
-.es_2{
-    background-color: #FFEFC2;
-    padding: 15px 25px;
-    font-size: large;
-    cursor: pointer;
-    border-radius: 10px;
-    margin: 10px;
-}
+
 
 .replay {
     cursor: pointer;
@@ -53,4 +48,8 @@
     padding: 15px 25px;
     font-size: medium;
     border-radius: 10px;
+}
+
+@media (max-width:400px) {
+    
 }

@@ -10,7 +10,7 @@ const dialogos= ["Eu me vira para a Lisa",
 "Só um pouquinho",
 "Mentira. Ela mora no outro lado da cidade e precisaria de dois ônibus paa chegar em casa.",
 "Seria melhor não fazer ela se deviar tanto do caminho dela",
-"Claro que no pior dos casos ela sempe pode dormir na minha casa. Não é como se meus pais brigariam",
+"Claro que no pior dos casos ela sempe pode dormir na minha casa. Não é como se meus pais fossem brigar",
 " "]
 
 function passar_dia() {

@@ -6,7 +6,7 @@ const dialogos= ["Além disso, só tem mais 3 dias de aula. Não vou estar perde
 "Se arrependiment matasse ... Eu devia ter procurado a Elisa",
 "Eu vejo eu garoto saindo do banheiro no fundo do corredor e sorrio",
 "Finalmente alguém que conhece essa joça!",
-"Oi! Você sabe onde fica a sala do terceirão?",
+"Oi! Eu sou a S/N, eu sou nova aqui e acabei me perdendo. Você sabe onde fica a sala do terceirão?",
 "Sei.",
 "Maravilha! Pode me mostrar onde fica?",
 "Posso.",
