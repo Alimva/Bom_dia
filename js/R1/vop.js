@@ -1,4 +1,5 @@
 let cont = 0 
+true_bad++
 
 const dialogos= ["Na verdade, oficina é uma palavra meio forte",
 "O espaço é uma casinha nos fundos do quintal que servia para guardar o equipamento de jardinagem na época em que a minha avó morava aqui",
@@ -41,11 +42,13 @@ const dialogos= ["Na verdade, oficina é uma palavra meio forte",
 "A Boy Band One Direction!"]
 
 const names = ["Pai","S/N","???"," "]
+var true_bad = localStorage.getItem("0");
 
 function passar_dia() {
     if(cont == 19){
         let bg = document.querySelector("#background img")
         bg.src = "../../assets/img/quintal.png"
+        true_bad++
     }
     if(cont == dialogos.length){
         set_checkpoint ("final_1.html")
@@ -54,9 +57,12 @@ function passar_dia() {
 
     muda_nome ()
     muda_personagem()
+    
+    
+    console.log(true_bad)
     let container = document.querySelector ("#dialogo p")
     container.innerText = dialogos [cont]
-    console.log (cont)
+    //console.log (cont)
     cont++;
 }
 

@@ -1,4 +1,9 @@
 let cont = 0 
+var true_bad = 0
+var true_prep = 0
+
+localStorage.setItem("0", true_bad);
+localStorage.setItem("0", true_prep);
 
 const dialogos = ["Desligo o meu alarme e me arrasto da cama.",
 "Eu me arrumo na frente do espelho e coloco meu cabelo em um coque bagunçado",
@@ -37,9 +42,9 @@ function passar_dia() {
     
     muda_nome ()
     muda_personagem()
+    console.log(true_bad)
     let container = document.querySelector ("#dialogo p")
     container.innerText = dialogos [cont]
-    console.log (cont)
     cont++;
     mostrar_escolha()
 }
@@ -86,13 +91,12 @@ function muda_personagem() {
     let personagem_img = document.querySelector ("#personagem_img")
     let img = document.querySelector ("#personagem_img img")
     
-    if(cont == 9){
+
+    if(cont == 9 || cont == 11 || cont == 13 || cont == 14 || cont == 16){
         personagem_img.classList.remove("escondido")
+        img.src = "../assets/pers/mãe_SN.png"
     }
-    if(cont == 12){
-        img.src = "../assets/pers/Bad_Boy.png"
-    }
-    if(cont == 15){
+    else{
         personagem_img.classList.add("escondido")
     }
 }

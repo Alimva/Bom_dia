@@ -151,7 +151,7 @@ const dialogos= ["Então Henrique, veio na festa só pra ficar sentado que nem u
 "Ué? Veio fazer o quê então?",
 "Arrumar cola",
 "Sério?",
-"Sim, se quiser vou estar na biblioteca",
+"Sim.Se quiser vou estar na biblioteca",
 "...Vixe e agora?",
 " "]
 
