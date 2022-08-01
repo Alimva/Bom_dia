@@ -1,6 +1,7 @@
 let cont = 0 
 
-const dialogos= ["Eu viro para a minha mãe enquanto coloco o meu tenis all-star",
+
+const dialogos= ["Eu viro para a minha mãe enquanto coloco o meu tênis all-star",
 "Mãe manda um beijo no papai por mim tá bom?",
 "Eu saio de casa e começo a minha caminhada até o ponto de ônibus",
 "Eu podia não ter muitos amigos na minha escola antiga mas ainda era melhor do que me mudar para um lugar onde eu não conheço ninguém",
@@ -10,9 +11,9 @@ const dialogos= ["Eu viro para a minha mãe enquanto coloco o meu tenis all-star
 "Mas isso não me impediu de atazanar ela sempre que eu quisesse",
 "Eu dou um sorriso lembrando as horas em que eu fiquei deitada na cama dela farmando em um jogo de celular ou outro enquanto ela estudava",
 "Se bem que mesmo com tanto tempo estudando ela ainda arranjou tempo para trabalhar como presidente do conselho estudantil",
-"Para ser bm honesta eu não vejo o charme da posição",
-"Fui a lider da minha turma desde antes dela sair da minha escola, apesar da gente meio que dividir a posição para não ter briga",
-"Mas por algum motivo a escola Amoris faz com que seus presidentes façam bem mais que anotar a agenda do dia e levar a culpapor qualquer merda que aconteça",
+"Para ser bem honesta eu não vejo o charme da posição",
+"Fui a líder da minha turma desde antes dela sair da minha escola, apesar da gente meio que dividir a posição para não ter briga",
+"Mas por algum motivo a escola Amoris faz com que seus presidentes façam bem mais que anotar a agenda do dia e levar a culpa por qualquer merda que aconteça",
 "Eles organizam eventos, punem os alunos que quebram as regras da escola e até propõem novas políticas escolares",
 "Meio bizarro mas é bem a cara da Lisa",
 "O ônibus sacode com uma freada brusca e eu vejo a escola pela janela",
@@ -22,7 +23,7 @@ const dialogos= ["Eu viro para a minha mãe enquanto coloco o meu tenis all-star
 "Eu vejo um quadro de avisos e procuro alguma coisa útil",
 "Notas, calendários e.... Achei!",
 "Lá no canto eu vejo um mapa da escola. É uma escola realmente enorme, três andares no prédio principal, quadras para tudo quanto é esporte, jardins enormes e mais 5 prédios ao redor do pavilhão central",
-"Depois do choque inicial eu percebo que o terceiro ano tem aulas no pavilhão central",
+"Depois do choque inicial eu percebo que o terceiro ano têm aulas no pavilhão central",
 "O lado bom é que eu já estou no pavilhão certo",
 "O lado ruim é que as informações acabam aí",
 "Merda.",
@@ -47,7 +48,6 @@ function passar_dia() {
     muda_nome()
     let container = document.querySelector ("#dialogo p")
     container.innerText = dialogos [cont]
-    console.log(cont)
     cont++
     mostrar_escolha()
 }

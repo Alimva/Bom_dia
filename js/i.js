@@ -2,14 +2,14 @@ let cont = 0
 var true_bad = 0
 var true_prep = 0
 
-localStorage.setItem("0", true_bad);
-localStorage.setItem("0", true_prep);
+localStorage.setItem("num", true_bad);
+localStorage.setItem("Num", true_prep);
 
-const dialogos = ["Desligo o meu alarme e me arrasto da cama.",
+const dialogos = ["Desligo o meu alarme e me arrastei da cama.",
 "Eu me arrumo na frente do espelho e coloco meu cabelo em um coque bagunçado",
-"Eu arrumo a mochila e olho para o relogio em cima da mesa",
+"Eu arrumo a mochila e olhou para o relógio em cima da mesa",
 "Toda pronta em 15 minutos! Só falta o café da manhã e vou estar pronta para sair.",
-"É incrivel quanto tempo você economiza de manhã quando não usa maquiagem ",
+"É incrível quanto tempo você economiza de manhã quando não usa maquiagem ",
 "Quando eu vejo que está tudo certo, vou para a sala.",
 "Eu vejo a minha mãe relendo um dos seus cadernos no caminho da cozinha",
 "Bom dia, mãe!",
@@ -42,7 +42,7 @@ function passar_dia() {
     
     muda_nome ()
     muda_personagem()
-    console.log(true_bad)
+    
     let container = document.querySelector ("#dialogo p")
     container.innerText = dialogos [cont]
     cont++;

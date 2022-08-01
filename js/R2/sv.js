@@ -1,9 +1,10 @@
 let cont = 0 
+var true_bad = localStorage.getItem("num")
 
 const dialogos= ["Além disso, só tem mais 3 dias de aula. Não vou estar perdendo nada importante se eu me atrasar.",
-"Eu olho para o corredor e começo a caminhar. Eu olho pela janelinha na porta das salas procurando algum sinal de que essa é a sala do terceiro ano",
+"Eu olho para o corredor e comecei a caminhar. Eu olho pela janelinha na porta das salas procurando algum sinal de que essa é a sala do terceiro ano",
 "Eu fico nessa por pelo menos uma hora sem encontrar a maldita sala",
-"Se arrependiment matasse ... Eu devia ter procurado a Elisa",
+"Se arrependimento matasse ... Eu devia ter procurado a Elisa",
 "Eu vejo eu garoto saindo do banheiro no fundo do corredor e sorrio",
 "Finalmente alguém que conhece essa joça!",
 "Oi! Eu sou a S/N, eu sou nova aqui e acabei me perdendo. Você sabe onde fica a sala do terceirão?",
@@ -64,12 +65,14 @@ function passar_dia() {
     }
     if(cont == dialogos.length){
         element.setAttribute("hidden","hidden")
+        true_bad++
+        localStorage.setItem("num", true_bad);  
     }
     muda_nome()
     muda_personagem()
     let container = document.querySelector ("#dialogo p")
     container.innerText = dialogos [cont]
-    console.log(cont)
+    
     cont++;
 
     mostrar_escolha()

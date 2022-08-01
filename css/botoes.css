@@ -8,7 +8,7 @@
     cursor: pointer;
     left: 52%;
     transform: translateX(-50%);
-    bottom: 30%;
+    bottom: 20%;
 }
 
 .botao_dia {
@@ -24,6 +24,18 @@
 
 }
 
+#es_1, #es_2{
+    background-color: #FFEFC2;
+    right: 50px;
+    padding: 15px 25px;
+    font-size: large;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 10px;
+    width: 100%;
+    min-width: max-content;
+    
+}
 .es_1, .es_2{
     background-color: #FFEFC2;
     right: 50px;
@@ -50,6 +62,3 @@
     border-radius: 10px;
 }
 
-@media (max-width:400px) {
-    
-}
