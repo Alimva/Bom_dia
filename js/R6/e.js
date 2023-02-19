@@ -79,11 +79,9 @@ function escolha_1(){
 }
 
 function escolha_2(){
-    
-        escolha.classList.remove("escondido")
-        set_checkpoint("../R8/a.html")
-        window.location = "../R8/a.html"
-    
+    set_checkpoint("../R8/a.html")
+    window.location = "../R8/a.html"
+
 }
 
 function muda_nome(){
