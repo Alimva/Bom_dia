@@ -74,7 +74,7 @@ const dialogos= ["Então Henrique, veio na festa só pra ficar sentado que nem u
 "Claro que a minha mãe estava furiosa. Ela pensou que sei lá. Um filho ia melhorar as coisas.",
 "Ou melhor ainda: Fazer ele para de trair a minha mãe para ela poder trair ele em paz",
 "Claro que isso não deu certo",
-"Bom quando a enfermeira entrou na sala e perguntou o nome do bebe ela ouviu a minha mãe berrando 'Hein Ricardo?' com meu pai seguido de silêncio",
+"Bom quando a enfermeira entrou na sala e perguntou o nome do bebe ela ouviu a minha mãe berrando 'Hein, Ricardo?'",
 "... Ela já tinha ouvido muitos nomes estranhos então acho que ela não estranhou sabe?",
 "Pera, pera. Não me diga que seu nome é-",
 "Meu nome é Henricardo sim",
