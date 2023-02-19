@@ -63,7 +63,6 @@ function passar_dia() {
     let container = document.querySelector ("#dialogo p")
     container.innerText = dialogos [cont]
     cont++;
-    
 
 }
 
