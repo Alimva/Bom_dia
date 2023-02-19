@@ -17,6 +17,7 @@ function passar_dia() {
     muda_nome()
     muda_personagem()
     let container = document.querySelector ("#dialogo p")
+    container.innerText = dialogos [cont]
     cont++;
 
 }
