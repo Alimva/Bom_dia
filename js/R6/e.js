@@ -79,8 +79,6 @@ function escolha_1(){
 }
 
 function escolha_2(){
-    let escolha = document.querySelector("#es_2")
-
     if(true_prep == 2){
         escolha.classList.remove("escondido")
         set_checkpoint("../R8/nv2.html")
