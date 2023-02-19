@@ -81,8 +81,8 @@ function escolha_1(){
 function escolha_2(){
     if(true_prep == 2){
         escolha.classList.remove("escondido")
-        set_checkpoint("../R8/a.html")
-        window.location = "../R8/a.html"
+        set_checkpoint("../R8/nv2.js")
+        window.location = "../R8/nv2.js"
     }
 }
 
