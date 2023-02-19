@@ -112,13 +112,11 @@ function escolha_1(){
 }
 
 function escolha_2(){
-    let escolha = document.querySelector("#es_2")
     
-    if(true_bad == 2){
         escolha.classList.remove("escondido")
         set_checkpoint("../R7/nv.html")
         window.location = "../R7/nv.html"
-    }
+    
 
 }
 
