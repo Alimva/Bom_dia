@@ -39,7 +39,8 @@ const dialogos= ["Oi Lisa. Bora nessa?",
 "Então eu queria que você soubesse. Eu vou te dar o que vocẽ quiser, mesmo que vocề só queira minha amizade, mesmo que queira que eu saia da sua vida",
 "O que você quer S/N?",
 " "]
-console.log(true_prep)
+console.log("true_prep",true_prep)
+console.log("true_bad",true_bad)
 const names = ["Elisa","S/N"," "]
 
 function passar_dia() {
