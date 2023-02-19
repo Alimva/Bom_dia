@@ -74,15 +74,17 @@ function mostrar_escolha(){
 }
 
 function escolha_1(){
-    set_checkpoint("../R8/nv2.html")
-    window.location = "../R8/nv2.html"
+    set_checkpoint("../R8/a.html")
+    window.location = "../R8/a.html"
 }
 
 function escolha_2(){
+    let escolha = document.querySelector("#es_2")
+
     if(true_prep == 2){
         escolha.classList.remove("escondido")
-        set_checkpoint("../R8/nv2.js")
-        window.location = "../R8/nv2.js"
+        set_checkpoint("../R8/nv2.html")
+        window.location = "../R8/nv2.html"
     }
 }
 
